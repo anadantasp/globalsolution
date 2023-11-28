@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fiap.globalsolution.error.exceptions.ResourceNotFoundException;
@@ -46,6 +47,14 @@ public class MedicoController {
         return ResponseEntity.ok(medicoRepository.findByCrm(crm));
     }
 
+    @GetMapping("/login")
+    public ResponseEntity<Medico> login(@RequestParam String email, @RequestParam String senha){
+        log.info("login medico " + email);
+        return ResponseEntity.ok(getMedicoByEmailAndSenha(email, senha));
+    }
+
+
+
     @PostMapping
     public ResponseEntity<Medico> create(@RequestBody @Valid Medico medico){
         log.info("cadastrando medico: " + medico);
@@ -79,6 +88,12 @@ public class MedicoController {
     private Medico getMedicoById(Long id){
         return medicoRepository.findById(id).orElseThrow(() -> { 
              return new ResourceNotFoundException("Entidade não encontrada");
+         });
+     }
+
+     private Medico getMedicoByEmailAndSenha(String email, String senha){
+        return medicoRepository.findByEmailAndSenha(email, senha).orElseThrow(() -> { 
+             return new ResourceNotFoundException("Medico não encontrado");
          });
      }
 }
