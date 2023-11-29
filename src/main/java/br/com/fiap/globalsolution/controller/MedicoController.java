@@ -44,7 +44,7 @@ public class MedicoController {
     @GetMapping("/crm/{crm}")
     public ResponseEntity<Medico> show(@PathVariable String crm){
         log.info("mostrar medico " + crm);
-        return ResponseEntity.ok(medicoRepository.findByCrm(crm));
+        return ResponseEntity.ok(getMedicoByCrm(crm));
     }
 
     @GetMapping("/login")
@@ -52,8 +52,6 @@ public class MedicoController {
         log.info("login medico " + email);
         return ResponseEntity.ok(getMedicoByEmailAndSenha(email, senha));
     }
-
-
 
     @PostMapping
     public ResponseEntity<Medico> create(@RequestBody @Valid Medico medico){
@@ -93,6 +91,12 @@ public class MedicoController {
 
      private Medico getMedicoByEmailAndSenha(String email, String senha){
         return medicoRepository.findByEmailAndSenha(email, senha).orElseThrow(() -> { 
+             return new ResourceNotFoundException("Medico não encontrado");
+         });
+     }
+
+     private Medico getMedicoByCrm(String crm){
+        return medicoRepository.findByCrm(crm).orElseThrow(() -> { 
              return new ResourceNotFoundException("Medico não encontrado");
          });
      }

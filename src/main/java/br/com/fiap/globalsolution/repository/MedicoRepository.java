@@ -9,7 +9,7 @@ import br.com.fiap.globalsolution.model.Pessoa.Medico;
 
 public interface MedicoRepository extends JpaRepository<Medico, Long>{
 
-    public Medico findByCrm(String cpf);
+    public Optional<Medico> findByCrm(String cpf);
 
     public Optional<Medico> findByEmailAndSenha(String email, String senha);
     
