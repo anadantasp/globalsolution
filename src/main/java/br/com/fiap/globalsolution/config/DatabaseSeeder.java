@@ -48,8 +48,8 @@ public class DatabaseSeeder implements CommandLineRunner{
     private Medico medico1 = new Medico(null, "Maria Clara", "mariaclara@email.com.br", "12345", "senha123", ortopedista);
     private Medico medico2 = new Medico(null, "Eduardo", "eduardo@email.com.br", "67890", "senha123", clinico);
 
-    private Paciente paciente = new Paciente(null, "Arthur", "arthur@email.com.br", "123456789", LocalDate.of(1998, 4, 20));
-    private Paciente paciente2 = new Paciente(null, "Bruna", "bruna@email.com.br", "987654321", LocalDate.of(1990, 9, 15));
+    private Paciente paciente = new Paciente(null, "Arthur", "arthur@email.com.br", "14637913055", LocalDate.of(1998, 4, 20));
+    private Paciente paciente2 = new Paciente(null, "Bruna", "bruna@email.com.br", "14313609024", LocalDate.of(1990, 9, 15));
 
     private Medicamento medicamento = new Medicamento(null, "Neosaldina");
     private Medicamento medicamento1 = new Medicamento(null, "Buscopan");

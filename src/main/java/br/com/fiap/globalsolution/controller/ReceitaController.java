@@ -3,6 +3,10 @@ package br.com.fiap.globalsolution.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -34,9 +38,9 @@ public class ReceitaController {
     PacienteService pacienteService;
 
     @GetMapping
-    public List<Receita> index(){
+    public Page<Receita> index(@PageableDefault(size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageRequest){
         log.info("buscando todos as receitas");
-        return receitaRepository.findAll();
+        return receitaRepository.findAll(pageRequest);
     }
 
     @GetMapping("/{id}")
