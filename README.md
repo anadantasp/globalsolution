@@ -8,7 +8,8 @@
 * Larah Correa
 
 ## Videos
-Acesse o pitch do projeto: 
+Video pitch do projeto
+[Vídeo sobre as funcionalidades do projeto](https://www.youtube.com/watch?v=LS9QPh3lNYs)
 
 
 Vídeo de teste das funcionalidades:

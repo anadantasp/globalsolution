@@ -131,7 +131,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/medicamentos/paciente/987654321",
+							"raw": "http://localhost:8080/medicamentos/paciente/14313609024",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -140,7 +140,7 @@
 							"path": [
 								"medicamentos",
 								"paciente",
-								"987654321"
+								"14313609024"
 							]
 						}
 					},
@@ -339,7 +339,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/receitas/paciente/987654321",
+							"raw": "http://localhost:8080/receitas/paciente/14313609024",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -348,7 +348,7 @@
 							"path": [
 								"receitas",
 								"paciente",
-								"987654321"
+								"14313609024"
 							]
 						}
 					},
@@ -360,7 +360,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/receitas/status/987654321",
+							"raw": "http://localhost:8080/receitas/status/14313609024",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -369,7 +369,7 @@
 							"path": [
 								"receitas",
 								"status",
-								"987654321"
+								"14313609024"
 							]
 						}
 					},
@@ -794,7 +794,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/pacientes/cpf/987654321",
+							"raw": "http://localhost:8080/pacientes/cpf/14313609024",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -803,7 +803,7 @@
 							"path": [
 								"pacientes",
 								"cpf",
-								"987654321"
+								"14313609024"
 							]
 						}
 					},
