@@ -11,8 +11,6 @@
 Video pitch do projeto
 [Vídeo sobre as funcionalidades do projeto](https://www.youtube.com/watch?v=LS9QPh3lNYs)
 
-
-Vídeo de teste das funcionalidades:
 ## Documentação
 Acesse o escopo do projeto aqui:
 

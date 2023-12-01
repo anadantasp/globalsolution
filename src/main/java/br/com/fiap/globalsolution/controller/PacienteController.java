@@ -37,12 +37,18 @@ public class PacienteController {
     @GetMapping("/cpf/{cpf}")
     public ResponseEntity<Paciente> show(@PathVariable String cpf){
         log.info("mostrar paciente " + cpf);
-        return ResponseEntity.ok(pacienteRepository.findByCpf(cpf));
+        return ResponseEntity.ok(getPacienteByCpf(cpf));
     }
 
     private Paciente getPacienteById(Long id){
         return pacienteRepository.findById(id).orElseThrow(() -> { 
              return new ResourceNotFoundException("Entidade não encontrada");
+         });
+    }
+
+    private Paciente getPacienteByCpf(String cpf){
+        return pacienteRepository.findByCpf(cpf).orElseThrow(() -> { 
+             return new ResourceNotFoundException("Paciente não encontrado");
          });
      }
 
