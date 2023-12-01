@@ -9,15 +9,14 @@
 
 ## Videos
 Video pitch do projeto
+
+
 [Vídeo sobre as funcionalidades do projeto](https://www.youtube.com/watch?v=LS9QPh3lNYs)
 
 ## Documentação
-Acesse o escopo do projeto aqui:
+Acesse o escopo do projeto [aqui](https://github.com/anadantasp/globalsolution/tree/main/documentacao/escopo%20do%20produto)
 
-## Figma
-
-
-## Como executar o projeto: 
+## [Figma](https://www.figma.com/file/m5PeO0oFa0dUapGQAac471/GS---HealthSync?type=design&node-id=0-1&mode=design)
 
 
 ## Endpoints do projeto
