@@ -8,7 +8,7 @@
 * Larah Correa
 
 ## Videos
-Video pitch do projeto
+[Video pitch do projeto](https://www.youtube.com/watch?v=C3cfcLA3_hs)
 
 
 [Vídeo sobre as funcionalidades do projeto](https://www.youtube.com/watch?v=LS9QPh3lNYs)
